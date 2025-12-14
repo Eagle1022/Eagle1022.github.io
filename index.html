@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Video Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 1.5rem;
+      text-align: center;
+      background: #020617;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .video-card {
+      margin-bottom: 2rem;
+      background: #020617;
+      padding: 1rem;
+      border-radius: 12px;
+    }
+    video, iframe {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Personal Video Space</h1>
+    <p>Videos I like, save, or share</p>
+  </header>
+
+  <main>
+    <div class="video-card">
+      <h2>Local Video</h2>
+      <video controls>
+        <source src="videos/sample.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="video-card">
+      <h2>YouTube Video</h2>
+      <iframe height="400" src="https://www.youtube.com/embed/VIDEO_ID" 
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 · Built just for me
+  </footer>
+</body>
+</html>
